@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    min-height: 100vh;
+    /* overflow-y: hidden; */
+}
+.navbar{
+    width: 85.4rem;
+    height: 4rem;
+    /* background: red; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0.5rem 3rem; */
+}
+
+/* .logo{
+    margin-top: 1rem;
+} */
+
+
+.navbar .left-element{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    /* padding: 1rem; */
+}
+.navbar .left-element .logo{
+    /* margin-left: -8rem; */
+}
+.navbar .left-element .open{
+    display: none;
+}
+.navbar .left-element nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .left-element nav .close{
+    display: none;
+}
+.navbar .left-element nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.navbar .left-element nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    transition:  0.5s ease-in;
+    font-weight: 600;
+}
+.navbar .left-element nav ul li a:hover{
+    font-weight: 700;
+}
+.navbar .left-element nav .right-list .feat{
+    display: inline-flex;
+    gap: 0.5rem;
+    /* flex-direction: column; */
+}
+.navbar .left-element nav .right-list .feat .images{
+    /* display: inline-flex; */
+    /* flex-direction: column; */
+    gap: 4rem;
+}
+.navbar .left-element nav .right-list  .images .up{
+    display: none;
+}
+.navbar .left-element nav .right-list .comp{
+    display: inline-flex;
+    gap: 0.5rem;
+}
+.navbar .left-element nav .list{
+    margin-left: 33rem;
+}
+.navbar .left-element nav .list .reg{
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+.navbar .left-element nav
+.left-element .menu{
+    display: none;
+}
+ 
+.navbar .left-element nav .right-list .feat .element{
+  margin: 3rem;
+  position: absolute;
+  width: 12rem;
+  /* background: hsl(0, 0%, 98%); */
+  height: 11rem;
+  margin-left: -3rem;
+  display: flex;
+  margin-top: 2rem;
+  /* display: none; */
+  /* justify-content: center; */
+  z-index: 100;
+  align-items: center;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  animation: rotate-two 1s ease forwards;
+  /* box-shadow: 1px 5px 7px hsl(0, 0%, 41%); */
+}
+@keyframes rotate-two{
+    30%{
+        opacity: 0.1;   
+    }
+    100%{
+        transform: translate(-30%);
+        /* background: whitesmoke; */
+    }
+}
+
+.navbar .left-element nav .right-list .feat .element .elem ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    /* align-items: center; */
+    transition: all 1s ease-in-out;
+}
+
+.navbar .left-element nav .right-list .feat .element .elem ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: 400;
+}
+.navbar .left-element nav .right-list .feat .element .elem ul li a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 600;
+}
+.navbar .left-element nav .right-list .feat .element .elem ul .todo{
+    display: flex;
+    gap: 0.8rem;
+}
+.navbar .left-element nav .right-list .feat .element .elem ul .calendar{
+    display: flex;
+    gap: 0.8rem;
+}
+.navbar .left-element nav .right-list .feat .element .elem ul .reminders{
+    display: flex;
+    gap: 0.8rem;
+}
+.navbar .left-element nav .right-list .feat .element .elem ul .planning{
+     display: flex;
+     gap: 0.8rem;
+}
+.navbar .left-element nav .right-list .comp .element-two{
+    margin: 3rem;
+    position: absolute;
+    width: 8.4rem;
+    background: hsl(0, 0%, 98%);
+    height: 8.5rem;
+    margin-left: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    /* justify-content: center; */
+    z-index: 100;
+    align-items: center;
+    /* display: none; */
+    border-radius: 0.6rem;
+  /* box-shadow: 1px 5px 7px hsl(0, 0%, 41%); */
+    animation: rotate 1s ease forwards;
+    cursor: pointer;
+}
+@keyframes rotate{
+    30%{
+        opacity: 0.1;   
+    }
+    100%{
+        transform: translate(-30%);
+        background: whitesmoke;
+    }
+}
+.navbar .left-element nav .right-list .comp .element-two ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    /* align-items: center; */
+    transition: all 1s ease-in-out;
+}
+.navbar .left-element nav .right-list .comp .element-two ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: 400;
+}
+.navbar .left-element nav .right-list .comp .element-two ul li a:hover{
+    color: hsl(0, 0%, 8%);
+    font-weight: 600;
+}
+.action-section{
+    padding: 1rem;
+    position: absolute;
+    height: 37.5rem;
+    display: flex;
+    /* align-items: center; */
+    /* background: red; */
+    margin-top: 1.4rem;
+    /* line-height: 1rem; */
+}
+.action-section .left{
+    /* align-items: left; */
+    /* text-align: left; */
+    /* width: 50rem; */
+    /* background-color: white; */
+    padding: 10rem 6rem;
+    display: block;
+    /* gap: 5rem; */
+
+}
+.action-section .left .text-content {
+    font-size: 3rem;
+    width: 40rem;
+    /* background: red; */
+    font-weight: 600;
+    color: hsl(0, 0%, 8%);
+    line-height: 5rem;
+    /* margin-bottom: 3rem; */
+    /* margin-top: 3rem; */
+    animation: color 9s ease-in-out infinite;
+}
+
+@keyframes color{
+    10%{
+        color: rgb(25, 25, 216);
+    }
+    30%{
+        color: purple;
+    }
+}
+.action-section .left .paragraph{
+    width: 30rem;
+    /* background: red; */
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    word-spacing: 0.15rem;
+}
+.action-section .left .learn{
+    position: absolute;
+    background: hsl(0, 0%, 8%);
+   width: 12rem;
+   height: 4rem;
+   /* top: 10%; */
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+    margin-top: 3rem;
+    color: hsl(0, 0%, 98%);
+    border-radius: 0.6rem;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+    font-weight: 700;
+}
+.action-section .left .learn:hover{
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+.action-section .left .images{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 15rem;
+    align-items: left;
+    gap: 3rem;
+}
+.action-section .right{
+    /* padding: 3rem; */
+    width: 30rem;
+    height: 40rem;
+    /* background: red; */
+    background-image: url(./images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+.action-section .right:hover{
+    transform: rotate(3deg);
+    /* transform: scale(2); */
+    /* transform: translate(40%); */
+}
+@media only screen and (max-width: 733px){
+    body{
+        width: 500px;
+    }
+   .navbar{
+    position: relative;
+    display: flex;
+    width: 31.3rem;
+    /* background: red; */
+   
+    /* gap: 3rem; */
+   }
+   .navbar .left-element nav::before{
+    content: '';
+    /* background: rgba(128, 128, 128, 0.157); */
+    outline: none;
+    border: 3px solid purple;
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    z-index: 100;
+    left: -20%;
+    /* bottom: -0.3%; */
+    top: 32%;
+    border-radius: 50%;
+    animation: movement 8s ease infinite;
+   }
+   @keyframes movement{
+    20%{
+        border: 2px solid red;
+    }
+    50%{
+        transform: translate(30%);
+        border: 2px solid greenyellow;
+        background: none;
+    }
+    70%{
+        border: 4px solid blue;
+    }
+
+   }
+   .navbar .left-element{
+    display: flex;
+    gap: 20rem;
+    justify-content: space-around;
+    align-items: center;
+   }
+   .navbar .left-element .open{
+    cursor: pointer;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10rem;
+   
+    animation: bounce 0.6s ease infinite;
+   }
+   @keyframes bounce{
+    30%{
+        transform: translateY(-3%) rotate(2deg);
+    }
+    40%{
+        transform: translateY(-4%) rotate(-2deg);
+
+    }
+   }
+   .navbar .left-element nav .close{
+    position: absolute;
+    display: flex;
+    /* align-items: left; */
+    cursor: pointer;
+    z-index: 100;
+    justify-content: center;
+    margin-left: 15rem;
+    float: right;
+    transition: 1s ease;
+    animation: rotate 1s ease forwards;
+   } 
+   @keyframes rotate{
+    30%{
+        transform: rotate(360deg) scale(1.6);
+        background: rgba(238, 8, 238, 0.264);
+        
+    }
+   }
+   .navbar .left-element nav{
+    display: none;
+    position: absolute;
+    width: 18rem;
+    height: 130rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    gap: 1rem;
+    background: hsl(0, 0%, 98%);
+    /* background-color: red; */
+    /* background: red; */
+    z-index: 300;
+    margin-left: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    outline: 0;
+    
+    }
+    .navbar .left-element nav .right-list{
+        display: flex;
+        flex-direction: column;
+        /* gap: 4rem; */
+        /* flex-direction: column; */
+       position: relative;
+        margin-top: 18rem;
+        line-height: 1rem;
+    }
+    
+    .navbar .left-element nav .right-list .feat .element{
+        /* background: white; */
+        margin-left: -7rem;
+        width: 0;
+        height: 0;
+        position: relative;
+        margin-top: 5.8rem;
+        /* margin-bottom: -0.1rem; */
+        display: none;
+    }
+    .navbar .left-element nav .right-list .feat .element .elem ul{
+        gap: 1.3rem;
+    }
+    .navbar .left-element nav .right-list .feat .element .elem ul li a{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .navbar .left-element nav .right-list .feat .element .elem ul li a:hover{
+    }
+    .navbar .left-element nav ul li a{
+        font-weight: 600;
+        transition: 0.1s ease-in;
+    }
+    .navbar .left-element nav ul li a:hover{
+        border-left: 2px solid red;
+        padding: 0.1rem 1rem;
+    }
+    .navbar .left-element nav .right-list .comp .element-two{
+        margin-left: -7rem;
+        width: 0;
+        height: 0;
+        position: relative;
+        margin-top: 5.3rem;
+        display: none;
+    }
+    .navbar .left-element nav .list{
+        /* display: flex; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 60rem;
+        justify-content: center;
+        line-height: 1.5rem;
+        padding: 0;
+        text-align: center;
+        margin-left: 3rem;
+        position: absolute;
+    }
+    .navbar .left-element nav .list .reg{
+        padding: 1rem 5rem;
+    }
+
+    .navbar .left-element nav .element{
+        display: block;
+        margin-top: 20rem;
+       
+    }
+    .element {
+        /* position: relative; */
+        /* display: block; */
+    }
+    .element .elem ul{
+        display: none;
+    }
+    .element-two {
+        display: none;
+    }
+    .action-section{
+        position: relative;
+        /* display: inline-flex; */
+        display: flex;
+        justify-content: center;
+        width: 30rem;
+        height: 50rem;
+        /* margin: 3rem; */
+        /* background-color: red; */
+    }
+    .action-section .left{
+        margin-top: 30rem;
+        position: relative;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .action-section .right{
+        display: none;
+    }
+    .action-section .center{
+        position: absolute;
+        width: 29rem;
+        height: 26rem;
+        margin-left: -0.8rem;
+        margin-top: 1rem;
+        /* background: green; */
+        /* background: red; */
+        background-image: url(./images/image-hero-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+    }
+    .action-section .left .text-content{
+        font-size: 1.5rem;
+        width: 29rem;
+        /* background: red; */
+        /* justify-content: center; */
+    }
+    .action-section .left .paragraph{
+        margin-top: 1rem;
+        font-size: 1.19rem;
+        word-spacing: 0.5rem;
+        width: 30rem;
+        /* background: red; */
+        text-align: center;
+        line-height: 1.7rem;
+    }
+    .nav{
+        position: absolute;
+        width: 20rem;
+        height: 100rem;
+        /* background-color: hsl(0, 0%, 98%); */
+        margin-top: 15rem;
+        left: 30%;
+        z-index: 100;
+    }
+    .nav .close{
+        z-index: 100;
+    }
+}
